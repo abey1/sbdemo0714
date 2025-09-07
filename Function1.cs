@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
+using Microsoft.Azure.WebJobs;
 
 namespace sbdemo0714;
 
@@ -18,9 +19,6 @@ public class Function1
     {
         _logger.LogInformation("C# Timer trigger function executed at: {executionTime}", DateTime.Now);
         
-        if (myTimer.ScheduleStatus is not null)
-        {
-            _logger.LogInformation("Next timer schedule at: {nextSchedule}", myTimer.ScheduleStatus.Next);
-        }
+        throw new Exception("Simulated exception for testing purposes.");
     }
 }
