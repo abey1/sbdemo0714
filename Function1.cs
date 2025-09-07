@@ -3,6 +3,7 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
 
+
 namespace sbdemo0714;
 
 public class Function1
