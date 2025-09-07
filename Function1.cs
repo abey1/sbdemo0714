@@ -20,6 +20,6 @@ public class Function1
     {
         _logger.LogInformation("C# Timer trigger function executed at: {executionTime}", DateTime.Now);
         
-        throw new Exception("Simulated exception for testing purposess.");
+        throw new Exception("Simulated exception for testing purposes about to go down.");
     }
 }
